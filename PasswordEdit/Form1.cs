@@ -15,6 +15,7 @@ namespace PasswordEdit
 {
     public partial class Form1 : Form
     {
+     
         public void ShowUsers()
         {
             ProcessStartInfo showUsers = new ProcessStartInfo("net","user");
@@ -23,7 +24,7 @@ namespace PasswordEdit
             showUsers.CreateNoWindow = true;
             var proc = Process.Start(showUsers);
             string resultProcess = proc.StandardOutput.ReadToEnd();
-            textBoxConsole.Text=resultProcess;
+            textBoxConsole.Text = resultProcess;      
         }
 
         public void EditPassword()
@@ -36,8 +37,8 @@ namespace PasswordEdit
             editPass.WindowStyle = System.Diagnostics.ProcessWindowStyle.Normal;
             editPass.Verb = "runas";
             var proc = Process.Start(editPass);
-            textBoxConsole.Text = "/n Edit password on process...."; 
-            
+            textBoxConsole.Text = "Edit password on process...."; 
+          
         }
 
         public Form1()
@@ -52,8 +53,16 @@ namespace PasswordEdit
 
         private void buttonEdit_Click(object sender, EventArgs e)
         {
+            if (textBoxUsername.Text.Equals(""))
+            {
+                MessageBox.Show("Please enter Valid username");
+                ShowUsers();
+            }
+            else
+            {
+                EditPassword();
+            }
             
-            EditPassword();
         }
     }
 }

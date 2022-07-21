@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.textBoxConsole = new System.Windows.Forms.TextBox();
             this.buttonShowUser = new System.Windows.Forms.Button();
             this.buttonEdit = new System.Windows.Forms.Button();
@@ -48,17 +49,17 @@
             // 
             // buttonShowUser
             // 
-            this.buttonShowUser.Location = new System.Drawing.Point(446, 47);
+            this.buttonShowUser.Location = new System.Drawing.Point(594, 47);
             this.buttonShowUser.Name = "buttonShowUser";
             this.buttonShowUser.Size = new System.Drawing.Size(121, 38);
             this.buttonShowUser.TabIndex = 1;
-            this.buttonShowUser.Text = "Users";
+            this.buttonShowUser.Text = " Users";
             this.buttonShowUser.UseVisualStyleBackColor = true;
             this.buttonShowUser.Click += new System.EventHandler(this.buttonShowUser_Click);
             // 
             // buttonEdit
             // 
-            this.buttonEdit.Location = new System.Drawing.Point(593, 46);
+            this.buttonEdit.Location = new System.Drawing.Point(444, 47);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(121, 38);
             this.buttonEdit.TabIndex = 1;
@@ -88,13 +89,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gainsboro;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(729, 343);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBoxUsername);
             this.Controls.Add(this.buttonEdit);
             this.Controls.Add(this.buttonShowUser);
             this.Controls.Add(this.textBoxConsole);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

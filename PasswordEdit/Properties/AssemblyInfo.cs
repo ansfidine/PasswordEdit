@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("PasswordEdit")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Windows password reset")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("ansfidine")]
 [assembly: AssemblyProduct("PasswordEdit")]
-[assembly: AssemblyCopyright("Copyright ©  2022")]
+[assembly: AssemblyCopyright("Copyright ©  2022 ansfidine")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
